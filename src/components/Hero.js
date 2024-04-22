@@ -63,12 +63,12 @@ const Hero = () => {
             <img src={MainImg} className="w-full h-screen absolute top-0 left-0 right-0 -z-1" alt="Leaves Images" />
             <div className="z-20 flex flex-col justify-center items-center pt-10 h-screen">
                 <Logo className="z-[20] mb-8"/>
-                <h3 className="text-white z-20 text-[36px] mb-4">Plant Desease Detection</h3>
+                <h3 className="text-white z-20 text-[36px] mb-4">O'simlik kasalliklarini aniqlash</h3>
                 <div className="z-20 flex flex-col items-center gap-[64px] mb-[90px]">
                     <div className="z-20 flex gap-10 items-center ">
                         <label htmlFor="img-input" className="w-[400px] cursor-pointer h-[277px] flex-col flex justify-center items-center z-20 bg-white rounded-[25px]">
                             <UploadIcon className="mb-5 block"/>
-                            <div className=" flex justify-center items-center max-w-[260px] w-full h-[66px] rounded-[25px] bg-primary text-white text-2xl mt-5">{uploading ? "Uploading Image" : "Upload Photo"}</div>
+                            <div className=" flex justify-center items-center max-w-[260px] w-full h-[66px] rounded-[25px] bg-primary text-white text-2xl mt-5">{uploading ? "Rasm yuklanmoqda" : "Rasm yuklash"}</div>
                             <input type="file" id="img-input"  onChange={onSelectFile} />
                         </label>
                         {selectedFile && !uploading && <div className="bg-white p-1 rounded-[25px]"> <img src={preview} className="rounded-[25px] w-[400px] h-[300px] z-20" alt="preview-img"/></div> }

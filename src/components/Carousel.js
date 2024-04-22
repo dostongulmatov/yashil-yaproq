@@ -36,116 +36,112 @@ import ArrowLeft from "../assets/icons/ArrowLeft";
 const carouselItems = [
     {
         img: apple_black_rot,
-        title: "Apple Black Rot"
+        title: "Olma Qora Chirishi"
     },
     {
         img: apple_healthy,
-        title: "Apple Healty"
+        title: "Sog'lom olma"
     },
     {
         img: apple_scab,
-        title: "Apple Scab"
+        title: "Olma Qoraqo'tiri"
     },
     {
         img: cherry_healthy,
-        title: "Cherry Healthy"
+        title: "Sog'lom gilos"
     },
     {
         img: cherry_powdery_meldrew,
-        title: "Cherry Powdery Mildrew"
+        title: "Gilos Kukunli Mildri"
     },
     {
         img: corn_gray_leaf_spot,
-        title: "Corn Gray Leaf Spot",
+        title: "Makkajo'xori Kulrang Bargli Joy",
     },
     {
         img: corn_healthy,
-        title: "Corn Healthy",
+        title: "Sog'lom Makkajo'xori",
     },
     {
         img: corn_rust,
-        title: "Corn Rust",
+        title: "Makkajo'xori Zang",
     },
     {
         img: grape_black_rot,
-        title: "Grape Black Rot",
+        title: "Uzum Qora Chirishi",
     },
     {
         img: grape_esca_black_measles,
-        title: "Grape Esca Black Measles",
+        title: "Uzum Eska Qora Qizamiq",
     },
     {
         img: grape_healthy,
-        title: "Grape Healthy",
+        title: "Sog'lom Uzum",
     },
     {
         img: grape_leaf_blight_isariopsis_leaf_spot,
-        title: "Grape Leaf Blight Isariopsis Leaf Spot",
+        title: "Uzum Barglari Izariopsis kassaligi",
     },
     {
         img: peach_bacterial_spot,
-        title: "Peach Bactorial Spot",
+        title: "Shaftoli Bakteriali",
     },
     {
         img: peach_healthy,
-        title: "Peach Healthy",
+        title: "Sog'lom Shaftoli",
     },
     {
         img: pepper_bell_healthy,
-        title: "Pepper Bell Healthy",
+        title: "Qalampir Qo'ng'irog'i Sog'lom",
     },
     {
         img: potato_early_blight,
-        title: "Potato Early Blight",
+        title: "Kartoshka Erta Kassalanishi",
     },
     {
         img: potato_healthy,
-        title: "Potato Healthy",
-    },
-    {
-        img: potato_early_blight,
-        title: "Potato Early Blight",
+        title: "Sog'lom kartoshka",
     },
     {
         img: potato_late_blight,
-        title: "Potato Late Blight",
+        title: "Kartoshka kech kassalanishi",
     },
     {
         img: strawberry_healthy,
-        title: "Strawberry Healthy",
+        title: "Sog'lom Qulupnay",
     },
 
     {
         img: strawberry_leaf_scorch,
-        title: "Strawberry Leaf Scorch",
+        title: "Qulupnay Barglari Kuyishi",
     },
     {
         img: tomato_bacterial_spot,
-        title: "Tomato Bacterial Spot",
+        title: "Pomidor bakteriali",
     },
     {
         img: tomato_early_blight,
-        title: "Tomato Early Blight",
+        title: "Pomidor erta kassalanishi",
     },
     {
         img: tomato_healthy,
-        title: "Tomato Healthy",
+        title: "Sog'lom Pomidor",
     },
     {
         img: tomato_late_blight,
-        title: "Tomato Late blight",
+        title: "Pomidor kech hastalanishi",
     },
     {
         img: tomato_leaf_mold,
-        title: "Tomato Leaf Mold",
+        title: "Pomidor Barglari Mog'orlari",
     },
     {
         img: tomato_mosaic_virus,
-        title: "Tomato Mosaic Virus",
+        title: "Pomidor Mozaikasi Virusi",
     },
     {
         img: tomato_septoria_leaf_spot,
-        title: "Tomato Septoria Leaf Spot"
+        title: "Pomidor Septoriyasi"
     }
 ]
 const CarouselItem = ({title, img}) => (
@@ -166,7 +162,7 @@ const Carousel = () => {
 
     return (
         <div className="">
-            <h3 className="text-center text-[36px] font-bold mb-[48px] mt-[80px]">Leaf Diagnosis Showcase</h3>
+            <h3 className="text-center text-[36px] font-bold mb-[48px] mt-[80px]">Barg diagnostikasi ko'rgazmasi</h3>
             <div className="gap-[80px] max-w-[1000px] mx-auto mb-[120px] relative">
                 <button className="absolute top-1/2 -translate-y-1/2 -left-[70px] z-10 w-10 h-10 flex items-center justify-center bg-primary rounded-full" onClick={() => slider?.current?.slickPrev()}><ArrowLeft className="fill-white rotate-90"/></button>
                 <Slider {...settings} className="" ref={slider}>
